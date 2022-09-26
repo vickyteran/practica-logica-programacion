@@ -91,21 +91,22 @@
 
 // 2
 
-let i = 0;
-let numPositivos = 0;
-let numNegativos = 0;
-let cero = 0;
-while (i < 10){
-    let numero = prompt ("ingrese un numero");
-    let num = parseInt(numero);
-    if (num > 0) {
-        numPositivos = numPositivos + 1;
-    } else if (num < 0){
-        numNegativos = numNegativos + 1;
-    } else {
-        cero = cero + 1;
-    }
-    i = i + 1;
-}
-document.write(`Hay ${numPositivos} numeros positivos, ${numNegativos} numeros negativos, y ${cero} ceros`)
+// let i = 0;
+// let numPositivos = 0;
+// let numNegativos = 0;
+// let cero = 0;
+// while (i < 10){
+//     let numero = prompt ("ingrese un numero");
+//     let num = parseInt(numero);
+//     if (num > 0) {
+//         numPositivos = numPositivos + 1;
+//     } else if (num < 0){
+//         numNegativos = numNegativos + 1;
+//     } else {
+//         cero = cero + 1;
+//     }
+//     i = i + 1;
+// }
+// document.write(`Hay ${numPositivos} numeros positivos, ${numNegativos} numeros negativos, y ${cero} ceros`)
+
 
