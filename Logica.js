@@ -110,3 +110,50 @@
 // document.write(`Hay ${numPositivos} numeros positivos, ${numNegativos} numeros negativos, y ${cero} ceros`)
 
 
+// tarea 4
+// 1 del video
+
+// let N = prompt("ingrese la cantidad de numeros a analizar")
+// let x = prompt("ingrese el numero a comparar")
+// const numeros = [];
+
+// for(let i=0; i<N; i++) {
+
+//  numeros[i] = prompt("ingrese los numeros a comparar");
+
+// };
+
+// console.log(numeros)
+
+// for(let i=0; i<N; i++) {
+//     let total = 0
+//     if(numeros[i] == x) {
+//         total++;
+//     } 
+//     document.write(total)
+//     };
+
+// 2 del video
+
+let x = prompt("ingrese un numero de 4 cifras o más");
+let cifras = x.length
+
+
+// while(x != 0) {
+//     x = Math.floor (x/10);
+//     N++;
+
+// };
+  console.log(cifras);
+ 
+
+  const array = [];
+  for(let i = 0; i<cifras; i++) {
+    array[i] = x.charAt(i);
+
+  }
+  arrayInvertido = array.reverse()
+  console.log(arrayInvertido)
+  document.write(`El array es ${arrayInvertido} y el orden es ${cifras}`)
+
+  
