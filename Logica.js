@@ -135,25 +135,46 @@
 
 // 2 del video
 
-let x = prompt("ingrese un numero de 4 cifras o más");
-let cifras = x.length
+// let x = prompt("ingrese un numero de 4 cifras o más");
+// let cifras = x.length
 
 
-// while(x != 0) {
-//     x = Math.floor (x/10);
-//     N++;
-
-// };
-  console.log(cifras);
+//   console.log(cifras);
  
 
-  const array = [];
-  for(let i = 0; i<cifras; i++) {
-    array[i] = x.charAt(i);
+//   const array = [];
+//   for(let i = 0; i<cifras; i++) {
+//     array[i] = x.charAt(i);
 
-  }
-  arrayInvertido = array.reverse()
-  console.log(arrayInvertido)
-  document.write(`El array es ${arrayInvertido} y el orden es ${cifras}`)
+//   }
+//   arrayInvertido = array.reverse()
+//   console.log(arrayInvertido)
+//   document.write(`El array es ${arrayInvertido} y el orden es ${cifras}`)
 
+//   1 de los ejercicios
+
+let N = prompt("ingrese la cantidad de numeros a analizar");
+const array = []
+
+for (let i = 0; i<N; i++) {
+array[i] = prompt("ingrese los numeros a analizar");
+};
+
+console.log(array)
+
+let numerosP = 0;
+let numerosN = 0;
+let cero = 0;
+
+for (let i = 0; i<N; i++) {
+    if(array[i] > 0) {
+numerosP = numerosP + 1
+    } else if(array[i] < 0) {
+numerosN++;
+    } else{
+        cero++;
+    };
+    };
+
+    document.write(`Hay ${numerosP} numeros positivos, ${numerosN} numeros negativos, y ${cero} ceros`)
   
