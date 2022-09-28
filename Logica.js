@@ -77,15 +77,17 @@
 
 // tarea 3
 // 1
+
 // let i = 0;
 // let total = 0;
-// while (i < 5){
+// let N = prompt("ingrese cantidad de numeros a sacar promedio")
+// while (i < N){
 //     let num = prompt ("ingrese un numero");
 //     let numero = parseInt(num);
 //     total = total + numero;
 //     i = i + 1;
 // }
-// let promedio = total / 5;
+// let promedio = total / N;
 // document.write(promedio)
 
 
@@ -179,3 +181,50 @@
 
 //     document.write(`Hay ${numerosP} numeros positivos, ${numerosN} numeros negativos, y ${cero} ceros`)
   
+
+// tarea 5
+// 1 del video
+
+// let N = prompt("Ingrese la cantidad de numeros a comprobar")
+// let i = 0
+// while (i<N) {
+//     let num = prompt("ingrese el numero a comprobar")
+//     if(num<10) {
+//         i++
+//     }else {
+//         document.write(`El numero ${num} no es menor que 10<br>`)
+//     }
+// }
+
+// 2 del video
+
+// let x = prompt("ingrese el numero del cual quiere su factorial");
+// let num = parseInt(x)
+// let fact = 1;
+// while (num != 0) {
+//     fact = fact * num;
+//     num = num - 1
+// };
+// document.write(`El factorial es ${fact}`);
+
+// 1 de los ejercicios
+
+
+// let puntaje = 0
+// let cantidadTiros = 0
+
+
+// tiro = prompt("ingrese valor del tiro");
+// do {
+//     cantidadTiros++;
+//     puntaje = puntaje + tiro; 
+//     tiro = prompt("ingrese valor del tiro");
+// } while (tiro == 1 && tiro == 3 && tiro == 5);
+
+// for(let tiro = prompt("ingrese valor del tiro"); tiro == 1 && tiro == 3 && tiro == 5; cantidadTiros++ ){
+//     puntaje = puntaje + tiro; 
+// }
+
+
+
+// document.write(`El puntaje es ${puntaje}, y se hicieron ${cantidadTiros} tiros`)
