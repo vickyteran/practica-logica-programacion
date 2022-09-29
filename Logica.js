@@ -210,21 +210,41 @@
 // 1 de los ejercicios
 
 
-// let puntaje = 0
-// let cantidadTiros = 0
-
-
-// tiro = prompt("ingrese valor del tiro");
-// do {
-//     cantidadTiros++;
-//     puntaje = puntaje + tiro; 
-//     tiro = prompt("ingrese valor del tiro");
-// } while (tiro == 1 && tiro == 3 && tiro == 5);
-
-// for(let tiro = prompt("ingrese valor del tiro"); tiro == 1 && tiro == 3 && tiro == 5; cantidadTiros++ ){
-//     puntaje = puntaje + tiro; 
-// }
+let puntaje = []
+let cantidadTiros =[]
+let tiro = 1
 
 
 
-// document.write(`El puntaje es ${puntaje}, y se hicieron ${cantidadTiros} tiros`)
+for (let i = 0; tiro%2===1 || tiro>6 && tiro%2===0; i++) {
+  
+    tiro = parseInt( prompt ("tire el dado :"))
+    if (tiro >0 && tiro<7 ) { 
+    
+    cantidadTiros.push(i) 
+    if (tiro%2===1) {puntaje.push(tiro)
+        
+    } else {alert("el numero ingresado fue par")}
+    
+  } else {alert("el dado toma valores de 1 a 6")
+    
+  }   
+
+ 
+
+
+
+
+   
+};
+ 
+let valorTotal = 0;
+for (let i =0; i< puntaje.length; i++) {
+   valorTotal = valorTotal+ puntaje[i]
+    
+}
+document.write(`el valor total es:${valorTotal}`);
+document.write(`el cantidad de tiro total es:${cantidadTiros.length}`)
+
+
+
