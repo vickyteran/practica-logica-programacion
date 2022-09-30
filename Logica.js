@@ -231,11 +231,6 @@ for (let i = 0; tiro%2===1 || tiro>6 && tiro%2===0; i++) {
   }   
 
  
-
-
-
-
-   
 };
  
 let valorTotal = 0;
